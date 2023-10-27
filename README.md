@@ -33,18 +33,22 @@ Run the password_manager.py script:
 <ul>
 <li>Select option 1 to create a new password file. Follow the prompts to provide a file name.</li>
 </ul>
+  <br></br>
 <li>Load an Existing Password File:</li>
 <ul>
 <li>Select option 2 to load an existing password file. Enter the file name when prompted.</li>
 </ul>
+    <br></br>
 <li>Add Passwords:</li>
 <ul>
 <li>Select option 3 to add passwords. Enter the website name and the corresponding password when prompted.</li>
 </ul>
+    <br></br>
 <li>Retrieve Password:</li>
 <ul>
 <li>Select option 4 to retrieve a password. Enter the website name for which you want to retrieve the password.</li>
 </ul>
+    <br></br>
 <li>Exit:</li>
 <ul>
 <li>Select option 5 to exit the password manager.</li>
