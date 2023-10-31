@@ -91,7 +91,7 @@ def main():
             case '6':
                 site = input('Enter the site that you want to delete: ')
                 pm.delete_site(site)
-                print("The site ", site, " and it's password has been deleted")
+                print("The site ", site, " and it's password have been deleted")
 
             case '7':
                 print('Exiting password manager...')
