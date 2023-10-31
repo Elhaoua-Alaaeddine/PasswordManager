@@ -19,7 +19,7 @@ Make sure you have Python installed on your system. If not, you can download and
 
 <h2>Getting Started</h2>
 Clone the repository to your local machine:
-<pre><code>git clone https://github.com/username/password-manager.git</code></pre>
+<pre><code>git clone https://github.com/SpicyFries68/PasswordManager.git</code></pre>
 
 Navigate to the project directory:
 <pre><code>cd password-manager</code></pre>
