@@ -54,6 +54,16 @@ Run the password_manager.py script:
 <li>Select option 4 to retrieve a password. Enter the website name for which you want to retrieve the password.</li>
 </ul>
     <br></br>
+  <li>Retrieve All Passwords:</li>
+<ul>
+<li>Select option 5 to retrieve all passwords.</li>
+</ul>
+    <br></br>
+  <li>Delete a Password:</li>
+<ul>
+<li>Select option 6 to delete a password. Enter the name of the website that you want to delete with its password.</li>
+</ul>
+    <br></br>
 <li>Exit:</li>
 <ul>
 <li>Select option 7 to exit the password manager.</li>
