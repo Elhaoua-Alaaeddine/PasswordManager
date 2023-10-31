@@ -28,6 +28,18 @@ class PasswordManager:
     def get_password(self, site):
         return self.password_dict[site]
 
+    def delete_site(self, site):
+        del self.password_dict[site]
+
+        if self.password_file is not None:
+            with open(self.password_file, 'w') as f:
+                for key, value in self.password_dict.items():
+                    f.write(key + ': ' + value + '\n')
+
+    def get_all_passwords(self):
+        if self.password_file is not None:
+            for site in self.password_dict:
+                print(site, ':', self.password_dict[site], '\n')
 
 
 def main():
@@ -43,7 +55,9 @@ def main():
             (2) Load a password file
             (3) Add a new password
             (4) Get a password
-            (5) Exit
+            (5) Get all passwords
+            (6) Delete a password
+            (7) Exit
         """)
 
     done = False
@@ -52,23 +66,35 @@ def main():
         match choice:
 
             case '1':
-                path = input('Enter the path to store the password file: ')
+                path = input('Enter the name of the file to store the passwords in: ')
                 pm.create_password_file(path, password)
+                print('Password file',path ,'created successfully!')
 
             case '2':
-                path = input('Enter the path to the password file: ')
+                path = input('Enter the file name to retrieve the passwords from: ')
                 pm.load_password_file(path)
 
             case '3':
                 site = input('Enter the site: ')
                 password = input('Enter the password: ')
                 pm.add_password(site, password)
+                print('Password added successfully for ', site, '!')
 
             case '4':
                 site = input('Enter the site: ')
                 print('the password of the site ',site, ':', pm.get_password(site))
 
             case '5':
+                print('All passwords:')
+                pm.get_all_passwords()
+
+            case '6':
+                site = input('Enter the site that you want to delete: ')
+                pm.delete_site(site)
+                print("The site ", site, " and it's password has been deleted")
+
+            case '7':
+                print('Exiting password manager...')
                 done = True
 
             case _:
