@@ -1,7 +1,7 @@
 <h1>Password Manager Python Project</h1>
 <h2>Description</h2>
 This simple Python project provides a basic password manager functionality. It allows users to create a password file, load an existing password file, add passwords for different websites, and retrieve passwords based on the input of a website name.
-
+Version 1.1.0 has two more features added: displaying all passwords and deleting a password based on a website name
 <h2>Features</h2>
 <ul>
 
@@ -12,6 +12,11 @@ This simple Python project provides a basic password manager functionality. It a
 <li><b>Add Passwords:</b> Add passwords for different websites along with the corresponding website names.</li>
 
 <li><b>Retrieve Passwords:</b> Retrieve passwords based on the input of a website name.</li>
+
+<li><b>Retrieve All Passwords:</b> Retrieve all the passwords.</li>
+
+<li><b>Delete a Password:</b> Delete a password based on a website name</li>
+
 </ul>
 
 <h2>Prerequisites</h2>
@@ -51,7 +56,7 @@ Run the password_manager.py script:
     <br></br>
 <li>Exit:</li>
 <ul>
-<li>Select option 5 to exit the password manager.</li>
+<li>Select option 7 to exit the password manager.</li>
 </ul>
 </ol>
 <h2>Example</h2>
@@ -63,7 +68,9 @@ Welcome to the Password Manager!
 2. Load a password file
 3. Add a new password
 4. Get a password
-5. Exit
+5. Get all passwords
+6. Delete a password
+7. Exit
 
 Enter your choice: 1
 Enter the name of the file to store the passwords in: passwords.pass
@@ -80,5 +87,14 @@ Enter website name: facebook
 the password of the site 'facebook': 123456
 
 Enter your choice: 5
+All passwords:
+'Site': Password
+'facebook': 123456
+
+Enter your choice: 6
+Enter the site that you want to delete: facebook
+The site facebook and it's password have been deleted
+
+Enter your choice: 7
 Exiting password manager...
 </pre>
