@@ -108,3 +108,7 @@ The site facebook and it's password have been deleted
 Enter your choice: 7
 Exiting password manager...
 </pre>
+<h2>
+Contributors
+</h2>
+Elhaoua-Alaaeddine
